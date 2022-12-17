@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f78478c0c4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class=" fas fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            
+            <h1>Hey! I'm <span>Palak Porwal </span></h1>
+            <br>
+            <p>Designer / Developer</p>
+            <br>
+            <p>from Indore, M.P.</p>
+        </div>
+    </div>
+</div>
+<!-- -------------about----------------------->
+<div id="about">
+<div class="container">
+    <div class="row">
+        <div class="about-col-1">
+            <img src="images/about.jpeg" alt="">
+        </div>
+        <div class="about-col-2">
+            <h1  class="sub-title">About Me</h1>
+            <p>I am a creative designer and developer, who aims to work with companies and communities to bring their passions to life. I'm willing to work for both design and development services of applications or websites!</p>
+                  <br>
+            <h3>Professional Information :</h3>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')" >Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('certifications')">Certifications & Courses</p>
+
+                
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Frontend</span><br>C</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                    <br>
+                    <li><span>Backend</span><br>C</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>Spring</li>
+                    <li>JSP</li>
+                    <li>Servlet</li>
+                    <li>MySQL</li>
+                    <li>DBMS</li>
+                    <br>
+                    <li><span>Others</span> <br> Data Structure</li>
+                    <li>MS Office - Word, Excel, Powerpoint</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Aug 2021 - Oct 2021</span><br>Java Intern at Pie Infocomm Pvt. Ltd.</li>
+                    
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2019 - 2024</span><br>M.Tech (IT) 5 yrs. integrated course <br>from International Institute of Professional Studies, DAVV <br>Indore, M.P.</li>
+                    <li><span>2018 - 19</span><br>Higher Secondary (PCM) with 88.66%<br>from Sarafa Vidya Niketan <br>Indore, M.P.</li>
+                    <li><span>2016 - 2017</span><br>High School with 90.66% <br>from Vaishnav Girls School <br>Indore, M.P. </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="certifications">
+                <ul>
+                    <li><span>C & C++</span><br>By Programmer's Point <br>Indore</li>
+                    <li><span>Java </span><br>By Genext Computers <br>Indore</li>
+                    <li><span>Basic Computer Diploma</span><br> By Genext Computers <br>Indore</li>
+                    <li><span>Java Gold Badge</span> <br>Hackerrank</li>
+                    <li><span>C++ Silver Badge</span> <br>Hackerrank</li>
+                    <li><span>World Book of Record, London</span> <br> <p>For creating World's Largest abstract portrait on ground using 6 lakh bottle caps in the area of 6000 sq. feet with Team Parivartan.</p></li>
+                   
+                </ul>
+            </div>
+            <br>
+        <h3>Personal Information :</h3>
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('dob')">DOB</p>
+            <p class="tab-links" onclick="opentab('hobbies')" >Hobbies</p>
+            <p class="tab-links" onclick="opentab('lang')" >Languages</p>
+            <p class="tab-links" onclick="opentab('address')" >Residential Address</p>
+            <p class="tab-links" onclick="opentab('contact')">Contact</p>
+            </div>
+        <div class="tab-contents" id="dob">
+            <ul>
+                <li>April 25,2002</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="hobbies">
+            <ul>
+                <ol>
+                <li >Sketching</li>
+                <li>Painting</li>
+                <li>Gardening</li>
+                </ol>
+            </ul>
+        </div>
+        <div class="tab-contents" id="lang">
+            <ul>
+                <ol>
+                    <li>English</li>
+                    <li>Hindi</li>
+                </ol>    
+            </ul>
+        </div>
+        <div class="tab-contents" id="address">
+            <ul>
+                <li>195 Shantinathpuri near Hawa bangla<br> Indore, M.P.</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="contact">
+            <ul>
+                <li><span>email</span> <br> palakporwal2504@gmail.com</li>
+                <li><span>call on </span> <br>+918109380731</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!------------------services-------------------------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad in neque inventore unde, mollitia dolor fugiat, voluptates placeat reiciendis quae consequatur dignissimos. Possimus rem saepe neque odio mollitia magni sit?</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                <h2>UI Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad in neque inventore unde, mollitia dolor fugiat, voluptates placeat reiciendis quae consequatur dignissimos. Possimus rem saepe neque odio mollitia magni sit?</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad in neque inventore unde, mollitia dolor fugiat, voluptates placeat reiciendis quae consequatur dignissimos. Possimus rem saepe neque odio mollitia magni sit?</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------portfolio------------------------>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/ball game.jpeg" alt="">
+                <div class="layer">
+                    <h3>Ball Game</h3>
+                    <a href="https://github.com/PalakPorwal/Ball_game"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/tic.png" alt="">
+                <div class="layer">
+                    <h3>Tic Tac Toe</h3>
+                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/blood.png" alt="">
+                <div class="layer">
+                    <h3>Blood Bank</h3>
+                    <a href="http://3.131.122.190:8080/Blood_Bank_Management_System/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/resume.jpeg" alt="">
+                <div class="layer">
+                    <h3>Resume Generator</h3>
+                    <a href="https://github.com/PalakPorwal/Resume-Generator"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/StudyMaterial.jpeg" alt="">
+                <div class="layer">
+                    <h3>Online Study Material</h3>
+                    <a href="https://github.com/PalakPorwal/online-study-material"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/weather.jpeg" alt="">
+                <div class="layer">
+                    <h3>Weather Forecast </h3>
+                    <a href="https://github.com/PalakPorwal/Blood-Bank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+     <!--  <a href="#" class="btn">See More</a> -->  
+    </div>
+</div>
+
+<!-------------------------contact------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>palakporwal2504@example.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>+918109380731</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/palak.porwal.313"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/art_gallery_4_2_5"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/palak-porwal-4700b01a5"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/PalakPorwal"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Portfolio Made with <span><i class="fa-regular fa-heart"></i></span> by Palak Porwal </p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu=document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzZdGX414ZyK0PdobpbxO1mi85FTaO7heAjHo_INXC4ifoAm3ACSLFpBTMqkZ8nJdxp/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },3000)
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
