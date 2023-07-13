@@ -23,10 +23,7 @@ body{
     background-size: cover;
     background-position: center;
 }
-section {
-    min-height: 100vh;
-    padding: 10rem 9% 2rem;
-}
+
 
 .container{
     padding: 10px 10%;
@@ -78,24 +75,8 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color:red;
 }
-.home-img img {
-    width: 25vw;
-    /* border-radius: 50%; */
-    animation: floatImage 4s ease-in-out infinite;
-}
-@keyframes floatImage {
-    0% {
-        transform: translateY(0);
-    }
 
-    50% {
-        transform: translateY(-2.4rem);
-    }
 
-    100% {
-        transform: translateY(0);
-    }
-}
 /*------------about----------------*/
 #about{
     padding: 80px 0;
