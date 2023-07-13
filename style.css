@@ -23,6 +23,10 @@ body{
     background-size: cover;
     background-position: center;
 }
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
 
 .container{
     padding: 10px 10%;
